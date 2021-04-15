@@ -9,20 +9,20 @@ package Modelo;
  *
  * @author AndreaPabon
  */
-public class Perro extends Animal{
+public class Perro extends Canino{
 
-    public Perro(String nombre, int edad, float peso) {
-        super(nombre, edad, peso);
+    public Perro(String foto, int nivelHambre, String comida, String nombre) {
+        super(foto, nivelHambre, comida, nombre);
     }
+
+    @Override 
+    public void comer(){
+        System.out.println("Comiendo como un perro");
+    }
+    
     @Override
     public void hacerRuido(){
-        
-        System.out.println("Ahora voy a extender lo que hace mi padre");
-        System.out.println("Perro haciendo ruido, guau guau");
-        
-        super.hacerRuido();
+        System.out.println("Haciendo ruido como un perro, guau guau");
     }
-    
-    
     
 }
