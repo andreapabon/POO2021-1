@@ -53,10 +53,6 @@ public class Animal {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
-    
-
-    
     //Métodos Generales
     public void dormir(){
         System.out.println(this.nombre + " está durmiendo");
@@ -67,5 +63,8 @@ public class Animal {
     public void hacerRuido(){
     	System.out.println( "Método padre");
         System.out.println("Haciendo ruido como el padre");
-    }    
+    } 
+    public void pasear(){
+        System.out.println("Paseando como un animal");;
+    }
 }
