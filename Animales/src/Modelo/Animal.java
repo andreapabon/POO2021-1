@@ -10,14 +10,40 @@ package Modelo;
  * @author AndreaPabon
  */
 public class Animal {
-    protected String nombre; //Protected permite que los hijos puedan heredar los atributos. Solo heredan lo público y protegido. 
-    protected int edad;
-    protected float peso;
+    protected String foto; //Protected permite que los hijos puedan heredar los atributos. Solo heredan lo público y protegido. 
+    protected int nivelHambre;
+    protected String comida;
+    protected String nombre;
 
-    public Animal(String nombre, int edad, float peso) {
+    public Animal(String foto, int nivelHambre, String comida, String nombre) {
+        this.foto = foto;
+        this.nivelHambre = nivelHambre;
+        this.comida = comida;
         this.nombre = nombre;
-        this.edad = edad;
-        this.peso = peso;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
+
+    public int getNivelHambre() {
+        return nivelHambre;
+    }
+
+    public void setNivelHambre(int nivelHambre) {
+        this.nivelHambre = nivelHambre;
+    }
+
+    public String getComida() {
+        return comida;
+    }
+
+    public void setComida(String comida) {
+        this.comida = comida;
     }
 
     public String getNombre() {
@@ -27,22 +53,9 @@ public class Animal {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    
+    
 
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public float getPeso() {
-        return peso;
-    }
-
-    public void setPeso(float peso) {
-        this.peso = peso;
-    }
     
     //Métodos Generales
     public void dormir(){
