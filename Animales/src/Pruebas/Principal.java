@@ -19,6 +19,9 @@ public class Principal {
         Gato miGato = new Gato("C:Imagenes/gato.jpg", 7, "Cat Chow", "Tom");
         miPerro.hacerRuido();
         miPerro.comer();
+        miPerro.jugar();
+        miPerro.serAmistoso();
+        
         ArrayList<Animal> misAnimales = new ArrayList<Animal>();
         
         misAnimales.add(miGato);
@@ -31,6 +34,7 @@ public class Principal {
         
         for (Animal animal: misAnimales){
             animal.hacerRuido();
+            System.out.println("El animal es un " + animal.getClass());
         }
     }
 }

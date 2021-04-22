@@ -17,6 +17,8 @@ public class Canino extends Animal{
     
     @Override
     public void pasear(){
+       
+        
         System.out.println("Paseando como un canino");
     }
 }

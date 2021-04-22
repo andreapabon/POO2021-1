@@ -9,7 +9,7 @@ package Modelo;
  *
  * @author AndreaPabon
  */
-public class Perro extends Canino{
+public class Perro extends Canino implements iMascota{
 
     public Perro(String foto, int nivelHambre, String comida, String nombre) {
         super(foto, nivelHambre, comida, nombre);
@@ -23,6 +23,16 @@ public class Perro extends Canino{
     @Override
     public void hacerRuido(){
         System.out.println("Haciendo ruido como un perro, guau guau");
+    }
+
+    @Override
+    public void serAmistoso() {
+        System.out.println("Soy amistoso");
+    }
+
+    @Override
+    public void jugar() {
+        System.out.println("Estoy jugando");
     }
     
 }

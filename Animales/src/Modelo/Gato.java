@@ -9,7 +9,7 @@ package Modelo;
  *
  * @author AndreaPabon
  */
-public class Gato extends Felino{
+public class Gato extends Felino implements iMascota{
 
     public Gato(String foto, int nivelHambre, String comida, String nombre) {
         super(foto, nivelHambre, comida, nombre);
@@ -23,6 +23,16 @@ public class Gato extends Felino{
     @Override
     public void hacerRuido(){
         System.out.println("Haciendo ruido como un gato, miau miau");
+    }
+
+    @Override
+    public void serAmistoso() {
+        System.out.println("Soy un gato amistoso");
+    }
+
+    @Override
+    public void jugar() {
+        System.out.println("Soy un gato jugando");
     }
     
 }

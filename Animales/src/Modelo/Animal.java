@@ -54,7 +54,7 @@ public class Animal {
         this.nombre = nombre;
     }
     //Métodos Generales
-    public void dormir(){
+    public final void dormir(){
         System.out.println(this.nombre + " está durmiendo");
     }
     public void comer(){
